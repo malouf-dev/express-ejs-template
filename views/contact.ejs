@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enron: Endless Possibilities</title>
+    <link rel="stylesheet" href="/style/default.css">
+    <link rel="stylesheet" href="/style/views/partials/header.css">
+    <link rel="stylesheet" href="/style/views/contact.css">
+    <link rel="stylesheet" href="/style/views/partials/footer.css">
+</head>
+<body>
+
+    <%- include('partials/header.ejs'); -%>
+    
+    <section class="block" id="contact-block">
+        <div class="margin">
+            <form id="contact-form">
+                <h1>Contact Us</h1>
+                <p>At Enron, we're crafting tomorrow's success stories with today's ambition and a dash of creative accounting. As we gear up for what's sure to be another headline-making day, we invite you to reach out. Whether you're looking to invest in our visionary projects, or simply marvel at our financial acrobatics, now's your chance. But make it quick—after tomorrow's news, our inbox is expected to be as full as our portfolio of "innovative" investments.</p>
+                <label for="fname">First name:</label><br>
+                <input type="text" name="first_name" id="fname">
+                <label for="fname">Last name:</label><br>
+                <input type="text" name="last_name" id="lname">
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email">
+                <label for="email">Message:</label><br>
+                <textarea name="message" id="message" rows="10" style="resize: none;"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <%- include('partials/footer.ejs'); -%>
+    
+</body>
+</html>
+
+<script src="/scripts/views/contact.js"></script>

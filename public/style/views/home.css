@@ -1,0 +1,44 @@
+#promo-video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    background: black;
+}
+
+#promo-section {
+    position: relative;
+}
+
+#volume-button {
+    width: 30px;
+    height: 30px;
+    background: url('/img/icons/volume.svg') no-repeat center / contain;
+    filter: invert(1);
+    position: absolute;
+    z-index: 1;
+    padding: 15px;
+    box-sizing: border-box;
+    bottom: 25px;
+    right: 25px;
+}
+
+#volume-button.active {
+    background-image: url('/img/icons/mute.svg');
+}
+
+.section-header {
+    margin: 0 0 15px 0;
+    font-size: 28px;
+}
+
+.blog-title {
+    font-size: 22px;
+}
+
+article {
+    border-top: solid 1px #cecece;
+}
+
+.publish-date {
+    color: #8f8f8f;
+    font-weight: 600;
+}

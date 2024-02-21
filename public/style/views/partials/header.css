@@ -1,0 +1,55 @@
+header {
+    display: flex;
+    justify-content: center;
+    padding: 15px !important;
+    border-bottom: solid 1px #cecece;
+    margin-bottom: 25px;
+}
+
+header .margin {
+    width: 100%;
+    max-width: var(--default-margin);
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+#logo img {
+    height: 70px;
+    transition: transform .5s;
+}
+
+@keyframes logo-rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#logo img:hover {
+    animation: infinite logo-rotate 3s forwards;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li:not(:last-of-type) {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
